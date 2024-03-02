@@ -1,0 +1,86 @@
+body{
+    background-color:lightblue;
+}
+
+#head1{
+    display: flex;
+    color:white;
+    background-color: black;
+    justify-content:space-between;   
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+}
+.bg{
+    background-image: url(vote1.png);
+    background-size: contain;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+}
+.intro{
+    border: 5px solid black;
+    display: flex;
+    justify-content:space-between;
+}
+
+.container{
+    border:  5px solid black;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color:lightgrey;
+}
+.source{
+    background-color: lightslategrey;
+    padding: 20px;
+    font-size: large;
+    
+}
+.menuitems{
+    background-color:lightsalmon;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 30px;
+    text-align: center;
+}
+label{
+    font-weight: 500px;
+    font-size: medium;
+
+}
+legend{
+    font-size: large;
+    font-weight: bold;
+}
+
+.char1{
+    color:darkred;
+}
+.select{
+    background-color:lightslategrey;
+    text-align: center ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bolder;
+}
+::placeholder{
+    text-align: center;
+}
+.btn{
+    background-color: aqua;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+#foot1{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+
+}
