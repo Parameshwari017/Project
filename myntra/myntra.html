@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	<title>Myntra</title>
+    <style>
+        
+             nav{
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-evenly;
+                 background-color:white;
+                 padding: 5px 0;
+                 height: 60px;
+             }
+            img{
+              height: 50%;
+              width:5%;
+              padding:10px;
+             }
+             .link a{
+                  color: black;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  padding: 10px;
+             }
+             .men:hover{
+              border-bottom:4px solid #ff1493;  
+              padding-bottom: 20px;
+             
+             }
+             .women:hover{
+              border-bottom:4px solid #ff00ff;
+              padding-bottom:20px;
+             }
+             .kids:hover{
+              border-bottom:4px solid orangered;
+              padding-bottom: 20px;
+             }
+             .home:hover{
+              border-bottom:4px solid #ffa500;
+              padding-bottom: 20px;
+             }
+             .beauty:hover{
+              border-bottom:4px solid #40e0d0;
+              padding-bottom: 20px;
+             }
+             .studio:hover{
+              border-bottom:4px solid #ff3e6c;
+              padding-bottom: 20px;
+             }
+             sup{
+              color: #ff00ff;
+             }
+             .search{
+                display:flex;
+                align-items: center;
+             }
+             .search input{
+                 padding:5px;
+                 border:0px solid lightgrey;
+                 background-color:#f5f5f6;
+                 width:250px;
+                 height: 25px;
+                 
+             }
+             .bi-search{
+               background-color: #f5f5f6;
+               padding-left: 10px;
+               height: 24.7px;
+               color: grey;
+               height: 35px;
+               border-radius: 5px 0 0 5px;
+             }
+             .icons{
+              display: flex;
+             }
+             .icons label{
+                 margin-top: 5px;
+                 font-weight: bolder;
+             }
+             .profile{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 10px;
+             }
+             .profile:hover{
+              border-bottom:4px solid #ff1493;  
+              padding-bottom: 20px;
+
+             }
+             .heart{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 10px;
+             }
+             .bag{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding:10px;
+             }
+            p{
+               text-transform: uppercase;
+               font-weight: 17px;
+               color:grey;
+               text-align: center;
+               background-color: #f0f8ff;
+               padding :20px 0 ;
+               margin:0px;
+             }
+             section{
+              padding:50px;
+              text-align: center;
+             }
+            section span{
+               text-transform: uppercase;
+               color:#c0c0c0;
+               font-weight: bolder;
+             }
+
+            .flex{
+              
+              display:flex;
+              justify-content: space-evenly;
+            }
+            .content1{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+               
+            }
+            .products1 img{
+                 height: 150px;
+                 width: 130px;
+            }
+            .product1 {
+              padding-top: 3px;
+              background-color: #ff3e6c;
+            }
+            
+
+            .content2{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            
+            }
+           .products2 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product2 {
+              padding-top:3px;
+              background-color: #ff3e6c;
+            } 
+
+           .content3{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products3 img{
+                
+                 height: 150px;
+                 width: 130px;
+            }
+            .product3 {
+              padding-top:3px;
+              background-color: #ff3e6c ;
+            }
+
+
+            .content4{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+             .products4 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product4 {
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+           .content5{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products5 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product5{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+
+           .content6{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products6 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product6{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .flex1{
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .content7{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products7 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product7{
+              padding-top:3px;
+              background-color:#ff3e6c;
+            }
+
+            .content8{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products8 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+            }
+            .product8{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content9{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products9 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+            }
+            .product9{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content10{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products10 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+            }
+            .product10{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content11{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products11 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+            }
+            .product11{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+             
+            .content12{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products12 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product12{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .flex2{
+               display: flex;
+               justify-content: space-evenly;
+            }
+            .content13{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+              
+            }
+            .products13 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product13{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content14{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products14 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product14{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content15{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products15 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+            }
+            .product15{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content16{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products16 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product16{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content17{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products17 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product17{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content18{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products18 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product18{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+           .flex3{
+              display: flex;
+              justify-content: space-evenly;
+           }
+            .content19{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products19 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product19{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content20{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products20 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product20{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content21{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products21 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product21{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content22{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products22 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product22{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content23{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products23 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product23{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content24{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products24 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product24{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .flex4{
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .content25{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products25 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product25{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content26{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products26 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product26{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content27{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products27 img{
+                 display: flex;
+                 height: 125px;
+                 width: 130px;
+                }
+            .product27{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+
+            .content28{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products28 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product28{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content29{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products29 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product29{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .content30{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products30 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product30{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .flex5{
+               display: flex;
+               justify-content: center;
+               gap:10px;
+            }
+            .content31{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products31 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product31{
+              padding-top:3px;
+              background-color: #ff3e6c;
+           } 
+
+            .content32{
+               border:5px solid #ff3e6c;
+               height: 300px;
+               width:150px;
+            }
+            .products32 img{
+                 display: flex;
+                 height: 150px;
+                 width: 130px;
+                }
+            .product32{
+              padding-top:3px;
+              background-color: #ff3e6c;
+            }
+
+            .foot{
+              background-color:#f0f8ff;
+            }
+            h3{
+               font-weight: lighter;
+              
+            }
+            p1{
+              text-align: justify;
+              color: grey;
+            
+            }
+            p2{
+              color: grey;
+            }
+            p3{
+              color: blue;
+            }
+            p4{
+              color: grey;
+              padding-left:20%;
+
+            } 
+            p12{
+              color:grey;
+              padding-left: 25%;
+            }
+            p13{
+              text-align: justify;
+              color:grey;
+            }
+            p14{
+              color: grey;
+              padding-left: 60%;
+            }
+            p15{
+              color: grey;
+              padding-left: 54%;
+            }
+            li{
+              font-weight: lighter;
+            }
+            p5,p6,p7,p8,p9,p10{
+              color: grey;
+            }
+            p11{
+              text-align: justify;
+              color: grey;
+            }
+            ul{
+              color: grey;
+            }
+    </style>
+</head>
+<body>
+	<nav>
+   
+      <img src="./myntra.jpeg" alt="myntra">
+
+
+    <div class="link">
+       <a href="#"  class="men">men</a>
+       <a href="#" class="women">women</a>
+       <a href="#"  class="kids">kids</a> 
+       <a href="#" class="home">home & living</a>
+       <a href="#" class="beauty">beauty</a>
+       <a href="#" class="studio">studio<sup>new</sup></a>
+    </div>
+
+
+       <div  class="search">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      <input type="text" placeholder="  Search for products,brands and more" name="search">
+    </div>
+
+      <div class="icons">
+     <div class="profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg>
+      <label>profile</label>
+    </div>
+
+
+       <div class="heart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+      </svg>
+      <label>whishlist</label>
+    </div>
+
+
+       <div class="bag">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+        <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+      </svg>
+      <label>bags</label>
+    </div>
+
+  </div>
+    </nav>
+         
+    
+      <p>sales ends in</p>
+
+         <section>
+          <span>shop by category</span>
+         </section>
+
+<div class="flex">
+  
+    <div class="content1">
+            <div class="products1">
+               <img src="./women ethic wear.jpeg" alt="women ethic wear">
+            </div>
+            <div class="product1">
+             <h5 style="color: white; text-align: center;">Women's Ethnic Wear</h5>
+             <h2 style="font-weight:10px; color:white; text-align: center;">50-80% OFF</h2>
+             <h4 style="text-align: center; color: white;">Shop Now</h4>
+           </div>
+    </div><br><br>
+      
+  
+    <div class="content2">
+              <div class="products2">
+                 <img src="./wth causal wear.jpg" alt="women ethic wear">
+              </div>
+              <div class="product2">
+               <h5 style="color:white; text-align:center">WTH Casual Wear</h5>
+               <h2 style="font-weight:10px; color: white; text-align: center;">40-80% OFF</h2>
+               <h4 style="text-align: center; color:white;">Shop Now</h4>
+              </div>
+   </div><br><br>
+
+  
+  
+  <div class="content3">
+           <div class="products3">
+              <img src="./womens active wear.jpg" alt="women ethic wear">
+           </div>
+           <div class="product3">
+                <h5 style="color:white; text-align:center">Women's Activewear</h5>
+                <h2 style="font-weight: 10px; color: white; text-align: center;">30-70% OFF</h2>
+                <h4 style="text-align: center; color: white;">Shop Now</h4>
+           </div>
+  </div><br><br>
+      
+  
+  <div class="content4">
+            <div class="products4">
+              <img src="./mens activewear.jpg" alt="women ethic wear">
+             </div>
+             <div class="product4">
+                <h5 style="color:white; text-align: center;">Men's Activewear</h5>
+                <h2 style="font-weight: 10px; color: white; text-align: center;">30-70% OFF</h2>
+                <h4 style="text-align: center; color: white;">Shop Now</h4>
+             </div>
+       
+ </div><br><br>
+
+
+ 
+  <div class="content5">
+           <div class="products5">
+              <img src="./western wear.jpg" alt="women ethic wear">
+           </div>
+           <div class="product5">
+                <h5 style="text-align: center; color: white;">Western Wear</h5>
+                <h2 style="font-weight: 10px; color:white; text-align: center;">40-80% OFF</h2>
+                <h4 style="text-align: center; color: white;">Shop Now</h4>
+           </div>
+  </div><br><br>
+    
+    
+
+  
+ <div class="content6">
+       <div class="products5">
+          <img src="./sportswear.jpg" alt="women ethic wear">
+       </div>
+       <div class="product6">
+            <h5 style="color: white; text-align: center;">SportsWear</h5>
+            <h2 style="font-weight: 10px; color: white; text-align: center;">30-80% OFF</h2>
+            <h4 style="text-align: center; color:white;">Shop Now</h4>
+       </div>
+</div><br><br>
+
+</div><br><br>
+
+
+<div class="flex1">
+
+   <div class="content7">
+     <div class="products7">
+       <img src="./loungewear.jpg" alt="women ethic wear">
+     </div>
+     <div class="product7">
+        <h5 style="color: white; text-align: center;">Loungewear</h5>
+        <h2 style="font-weight:10px; color:white; text-align: center;">30-60% OFF</h2>
+        <h4 style="text-align: center; color: white;">Shop Now</h4>
+     </div>
+</div><br><br>
+
+
+  <div class="content8">
+     <div class="products8">
+       <img src="./innerwear.jpg" alt="women ethic wear">
+     </div>
+     <div class="product8">
+        <h5 style="color: white; text-align: center;">Innerwear</h5>
+        <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 70% OFF</h2>
+        <h4 style="text-align: center; color: white;">Shop Now</h4>
+     </div>
+ </div><br><br>
+
+
+<div class="content9">
+  <div class="products9">
+     <img src="./watches.jpg" alt="women ethic wear">
+  </div>
+  <div class="product9">
+   <h5 style="color: white; text-align: center;">Watches</h5>
+   <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 80% OFF</h2>
+   <h4 style="text-align: center; color: white;">Shop Now</h4>
+ </div>
+</div><br><br>
+
+
+<div class="content10">
+  <div class="products10">
+     <img src="./grooming.jpg" alt="women ethic wear">
+  </div>
+  <div class="product10">
+   <h5 style="color: white; text-align: center;">Grooming</h5>
+   <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 60% OFF</h2>
+   <h4 style="text-align: center; color: white;">Shop Now</h4>
+ </div>
+</div><br><br>
+
+
+<div class="content11">
+   <div class="products11">
+      <img src="./beauty & makeup.jpg" alt="women ethic wear">
+   </div>
+  <div class="product11">
+   <h5 style="color: white; text-align: center;">Beauty & Makeup</h5>
+   <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 60% OFF</h2>
+   <h4 style="text-align: center; color: white;">Shop Now</h4>
+ </div>
+</div><br><br>
+
+<div class="content12">
+  <div class="products12">
+     <img src="./kids wear.jpg" alt="women ethic wear">
+  </div>
+  <div class="product12">
+   <h5 style="color: white; text-align: center;">Kids Wear</h5>
+   <h2 style="font-weight:10px; color:white; text-align: center;">50-70% OFF</h2>
+   <h4 style="text-align: center; color: white;">Shop Now</h4>
+ </div>
+</div><br><br>
+
+</div><br><br>
+
+
+<div class="flex2">
+
+  <div class="content13">
+    <div class="products13">
+      <img src="./mens footwear.jpg" alt="women ethic wear">
+    </div>
+    <div class="product13">
+       <h5 style="color: white; text-align: center;">Men's Footwear</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">50-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+  <div class="content14">
+    <div class="products14">
+      <img src="./womens footwear.jpg" alt="women ethic wear">
+    </div>
+    <div class="product14">
+       <h5 style="color: white; text-align: center;">Women's Footwear</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">40-80% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+
+  <div class="content15">
+    <div class="products15">
+      <img src="./bags & backbags.jpg" alt="women ethic wear">
+    </div>
+    <div class="product15">
+       <h5 style="color: white; text-align: center;">Bags,Belts & Wallets</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">40-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+
+  <div class="content16">
+    <div class="products16">
+      <img src="./office wear.jpg" alt="women ethic wear">
+    </div>
+    <div class="product16">
+       <h5 style="color: white; text-align: center;">Office Wear</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">40-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+
+  <div class="content17">
+    <div class="products17">
+      <img src="./mens ethnic wear.jpg" alt="women ethic wear">
+    </div>
+    <div class="product17">
+       <h5 style="color: white; text-align: center;">Men's Ethnic Wear</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 80% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+
+
+  <div class="content18">
+    <div class="products18">
+      <img src="./homedecor.jpg" alt="women ethic wear">
+    </div>
+    <div class="product18">
+       <h5 style="color: white; text-align: center;">Home Decor</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">40-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+</div><br><br>
+
+
+<div class="flex3">
+
+  <div class="content19">
+    <div class="products19">
+      <img src="./handbags.jpg" alt="women ethic wear">
+    </div>
+    <div class="product19">
+       <h5 style="color: white; text-align: center;">Handbags</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">40-80% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+
+  <div class="content20">
+    <div class="products20">
+      <img src="./headphones & speakers.jpg" alt="women ethic wear">
+    </div>
+    <div class="product20">
+       <h5 style="color: white; text-align: center;">Headphones & Speakers</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+
+  <div class="content21">
+    <div class="products21">
+      <img src="./jewellary.jpg" alt="women ethic wear">
+    </div>
+    <div class="product21">
+       <h5 style="color: white; text-align: center;">Jewellery</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 80% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+ 
+<div class="content22">
+  <div class="products22">
+    <img src="./size-inclusive styles.jpg" alt="women ethic wear">
+  </div>
+  <div class="product22">
+     <h5 style="color: white; text-align: center;">Size-Inclusive Styles</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 60% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+<div class="content23">
+  <div class="products23">
+    <img src="./inclusive.jpg" alt="women ethic wear">
+  </div>
+  <div class="product23">
+     <h5 style="color: white; text-align: center;">Inclusive Styles</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 60% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+<div class="content24">
+  <div class="products24">
+    <img src="./watches & wearable.jpg" alt="women ethic wear">
+  </div>
+  <div class="product24">
+     <h5 style="color: white; text-align: center;">Watches & Wearable</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 80% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+</div><br><br>
+
+<div class="flex4">
+  <div class="content25">
+    <div class="products25">
+      <img src="./sleepwear.jpg" alt="women ethic wear">
+    </div>
+    <div class="product25">
+       <h5 style="color: white; text-align: center;">Sleepwear</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">30-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+
+<div class="content26">
+  <div class="products26">
+    <img src="./womens work wear.jpg" alt="women ethic wear">
+  </div>
+  <div class="product26">
+     <h5 style="color: white; text-align: center;">Women's  Workwear</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">40-70% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+<div class="content27">
+  <div class="products27">
+    <img src="./eyewear.jpg" alt="women ethic wear">
+  </div>
+  <div class="product27">
+     <h5 style="color: white; text-align: center;">Eyewear</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">UPTO 80% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+<div class="content28">
+  <div class="products28">
+    <img src="./mens work wear.jpg" alt="women ethic wear">
+  </div>
+  <div class="product28">
+     <h5 style="color: white; text-align: center;">Men's Workwear</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">40-80% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+<div class="content29">
+  <div class="products29">
+    <img src="./casual wear.jpg" alt="women ethic wear">
+  </div>
+  <div class="product29">
+     <h5 style="color: white; text-align: center;">Casual Styles</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">40-80% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+
+<div class="content30">
+  <div class="products30">
+    <img src="./bags & backbags.jpg" alt="women ethic wear">
+  </div>
+  <div class="product30">
+     <h5 style="color: white; text-align: center;">Bags & Backpacks</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">30-80% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+</div><br><br>
+
+
+<div class="flex5">
+  <div class="content31">
+    <div class="products31">
+      <img src="./trolleys & luggage.jpg" alt="women ethic wear">
+    </div>
+    <div class="product31">
+       <h5 style="color: white; text-align: center;">Trolleys & Luggage</h5>
+       <h2 style="font-weight:10px; color:white; text-align: center;">30-70% OFF</h2>
+       <h4 style="text-align: center; color: white;">Shop Now</h4>
+    </div>
+</div><br><br>
+ 
+
+<div class="content32">
+  <div class="products32">
+    <img src="./flip-flop.jpg" alt="women ethic wear">
+  </div>
+  <div class="product32">
+     <h5 style="color: white; text-align: center;">Flip-Flops</h5>
+     <h2 style="font-weight:10px; color:white; text-align: center;">30-70% OFF</h2>
+     <h4 style="text-align: center; color: white;">Shop Now</h4>
+  </div>
+</div><br><br>
+
+</div><br><br>
+
+
+
+<footer class="foot">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+  </svg>
+   
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"></path></svg>
+
+
+
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+     </svg>
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+      <h3>POPULAR SEARCH</h3>
+      <p1>Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings |  Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+      </p1><br><br>
+      <p2>In case of any concern,<p3>Contact Us</p3></p2>
+      <p12>&copy; 2024 www.myntra.com. All rights reserved.</p12>
+      <p4>A Flipkart company</p4><br><br><hr>
+
+      <h3>Registered Office Address</h3>
+  
+      <p5>Buildings Alyssa,</p5><br>
+      <p6>Begonia and Clover situated in Embassy Tech Village,</p6><br>
+      <p7>Outer Ring Road,</p7><br>
+      <p8>Devarabeesanahalli Village,</p8><br>
+      <p9>Varthur Hobli,<p14>CIN: U72300KA2007PTC041799</p14></p9><br>
+      <p10>Bengaluru – 560103, India<p15>Telephone: +91-80-61561999</p15></p10><br><br>
+      <hr>
+      <h3>ONLINE SHOPPING MADE EASY AT MYNTRA</h3>
+      <p11>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.</p11><br><br>
+      
+      <h3>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</h3>
+      <p11>Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.</p11><br><br>
+
+      <ol><li>Smart men's clothing<p13>- At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.</li></p13><br><br>
+      <li>Trendy women’s clothing<p13>- Online shopping for women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear.</p13></li><br><br>
+      <li>Fashionable footwear<p13>- While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.</p13></li><br><br>
+      <li>Stylish accessories<p13>- Myntra is one of the best online shopping sites for classy accessories that perfectly complement your outfits. You can select smart analogue or digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options.</p13></li><br><br>
+      <li>Fun and frolic<p13>- Online shopping for kids at Myntra is a complete joy. Your little princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and much more from our online store. Check out our lineup of toys with which you can create memories to cherish. </p13></li><br><br>
+      <li>Beauty begins here<p13>- You can also refresh, rejuvenate and reveal beautiful skin with personal care, beauty and grooming products from Myntra. Our soaps, shower gels, skin care creams, lotions and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty.</p13></li></ol><br><br>
+
+      <p13>Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personality to your bedrooms with bed linen and curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants are sure to breathe life into any corner of your home.</p13><br><br>
+      <h3>AFFORDABLE FASHION AT YOUR FINGERTIPS</h3>
+      <p11>Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest designer clothing, footwear and accessories in the market. You can get your hands on the trendiest style every season in western wear. You can also avail the best of ethnic fashion during all Indian festive occasions. You are sure to be impressed with our seasonal discounts on footwear, trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable.</p11><br><br>
+
+      <h3>MYNTRA INSIDER</h3>
+      <p11>Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Myntra Insider was introduced to enhance your online experience. The program is applicable to every registered customer and measures rewards in the form of Insider Points.</p11><
+
+      <p11>There are four levels to achieve in the program, as the Insider Points accumulate. They are - Insider, Select, Elite or Icon. Apart from offering discounts on Myntra and partner platform coupons, each tier comes with its own special perks.</p11><br><br>
+
+      <h3>Insider</h3>
+      <ul><li>Opportunity to master any domain in fashion with tips from celebrity stylists at Myntra Masterclass sessions.</li><br><br><li>Curated collections from celeb stylists.</li><br><br></ul>
+
+      <h3>Elite</h3>
+      <ul><li>VIP access to special sale events such as the End of Reason Sale (EORS) and product launches.</li><br><br><li>Exclusive early access to Limited Edition products.</li><br><br></ul>
+
+      <h3>Icon</h3>
+      <ul><li>Chance to get on guest lists for special events.</li></ul><br><br>
+
+      <h3>Myntra Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out On</h3>
+      <p11>The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming surge of online content. It was for this very reason that personalisation of search feeds was proposed as a solution to combat the overload of irrelevant information.</p11><br><br><br>
+
+        <p11>Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content, increasing user engagement, retention and customer loyalty.</p11><br><br><br>
+        
+        <p11>Myntra is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed. Named theMyntra Studio, this personalised search feed brings you the latest men and women's fashion trends, celebrity styles, branded content and daily updates from your favourite fashion labels.</p11><br><br><br>
+
+        <p11>If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful, and personalised fashion feed in your life.</p11><br><br>
+
+        <ol><li>Keep Up With What Your Favourite Fashion Icons Are Upto</li><br>
+        <p13>The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion bloggers and stylists. The whole concept of building an outfit from scratch and showcasing it to a huge community of enthusiasts using the hashtag has helped individuals with understanding trends and making suitable for daily wear.</p13><br><br>
+        <p13>Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto. From Sonam Kapoor to Hailey Baldwin Bieber, Myntra Studio has a ‘Stories’ feature to help track celebrity fashion trends, exploring details such as their outfit of the day. This way, you would not ever miss out on the latest celebrity fashion trends, from all around the world.</p13><br><br>
+        <li>Quick Fashion Tip And Tricks</li><br>
+        <p13>Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Myntra Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe.</p13><br><br>
+        <li>Updates on What Is Trending and New Product Launches</li><br>
+        <p13>Since fast fashion seems to be extremely hard to keep up with these days, a quick update on what is trending in accessories, clothing and footwear would certainly be of great help. Myntra Studio helps you stay connected to the most beloved and sought after brands such as Puma, Coverstory, The Label Life and so many more.</p13><br><br>
+        <p13>Your feed keeps you updated with stories of what the brands are creating including clothing, footwear and jewellery, along with their new seasonal collections</p13><br><br>
+        <li>Explicit Step-By-Step Beauty Routines From Experts</li><br>
+        <p13>Just like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, are constantly coming up with mind-blowing products. Whether it is creating a no-makeup look, different winged eyeliners, do-it-yourself facial masks and other personal care beauty routines, Myntra Studio is here for you.</p13><br><br>
+        <li>Celebrity Confessions And A Look Into Their Lives</li><br>
+        <p13>A bonus feature that Myntra Studio has in store for you is celebrity confessions and a peek into their lives. So, Myntra helps you stay connected to your most beloved celebrities in a matter of clicks.</p13><br><br>
+        <p13>If you are very particular when it comes to the content you wish to view and engage with on social media, the ability to intricately filter content helps achieve that. Applying the same formula for hardcore fashion lovers and shoppers, Myntra Studio brings you a daily fashion fix incorporating everything that you love, all at one place. Sign up on Myntra today and start organising your fashion feed, just the way you want to.</p13></ol><br>
+
+        <h3>MYNTRA APP</h3>
+        <p11>Myntra, India’s no. 1 online fashion destination justifies its fashion relevance by bringing something new and chic to the table on the daily. Fashion trends seem to change at lightning speed, yet the Myntra shopping app has managed to keep up without any hiccups. In addition, Myntra has vowed to serve customers to the best of its ability by introducing its first-ever loyalty program, The Myntra Insider. Gain access to priority delivery, early sales, lucrative deals and other special perks on all your shopping with the Myntra app. Download the Myntra app on your Android or IOS device today and experience shopping like never before!</p11><br><br>
+
+        <h3>HISTORY OF MYNTRA</h3>
+        <p11>Becoming India’s no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements and a team of dedicated personnel with an equally loyal customer base have made Myntra the online platform that it is today. The original B2B venture for personalized gifts was conceived in 2007 but transitioned into a full-fledged ecommerce giant within a span of just a few years. By 2012, Myntra had introduced 350 Indian and international brands to its platform, and this has only grown in number each passing year. Today Myntra sits on top of the online fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.</p11><br><br>
+        <p11>The Myntra shopping app came into existence in the year 2015 to further encourage customers’ shopping sprees. Download the app on your Android or IOS device this very minute to experience fashion like never before</p11>
+
+        <h3>SHOP ONLINE AT MYNTRA WITH COMPLETE CONVENIENCE</h3>
+        <p11>Another reason why Myntra is the best of all online stores is the complete convenience that it offers. You can view your favourite brands with price options for different products in one place. A user-friendly interface will guide you through your selection process. Comprehensive size charts, product information and high-resolution images help you make the best buying decisions. You also have the freedom to choose your payment options, be it card or cash-on-delivery. The 14-day returns policy gives you more power as a buyer. Additionally, the try-and-buy option for select products takes customer-friendliness to the next level.</p11><br><br>
+        <p11>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You can also shop for your friends, family and loved-ones and avail our gift services for special occasions.</p11><br><br>
+
+
+</footer>
+
+
+
+</body>
+</html>
